@@ -38,7 +38,7 @@ public class PruebaServlet extends HttpServlet {
 		dbUrl += "/"+System.getenv("POSTGRESQL_DATABASE");
 		
 		String username = System.getenv("POSTGRESQL_USER");
-		String password = System.getenv("PGPASSWORD");
+		String password = System.getenv("POSTGRESQL_PASSWORD");
 		
 		Connection connection = null;
 		Statement s = null;
