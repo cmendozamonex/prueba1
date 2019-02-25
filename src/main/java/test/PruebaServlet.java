@@ -48,7 +48,7 @@ public class PruebaServlet extends HttpServlet {
 			connection = DriverManager.getConnection(dbUrl,username,password);
 			if(connection != null ) {
 				s = connection.createStatement();
-				r = s.executeQuery("SELECT serial,string FROM prueba1");
+				r = s.executeQuery("SELECT string FROM prueba1");
 				
 				while(r.next()) {
 					String v = r.getString("string");
